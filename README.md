@@ -69,3 +69,48 @@ pip install pandas openpyxl
 Run the script:
 
 python your_script.py
+
+
+
+## How to Run the Project
+
+### Option 1 — Run using Docker
+
+docker build -t referral-project .
+docker run referral-project
+
+### Option 2 — Run using Virtual Environment (venv)
+
+python -m venv venv
+venv\Scripts\activate
+pip install pandas openpyxl
+python your_script.py
+
+### Option 3 — Run using Global Python
+
+pip install pandas openpyxl
+python your_script.py
+
+
+
+## Code Workflow
+
+1. The script loads the referral dataset from the CSV file.
+
+2. Using the pandas library, the data is read into a DataFrame for processing.
+
+3. Basic data profiling is performed such as:
+   - Counting rows
+   - Checking data structure
+   - Measuring processing time
+   - Monitoring memory usage
+
+4. The processed data is saved into a new file:
+   referral_report.csv
+
+5. A profiling report is generated and exported as:
+   profiling_report.xlsx
+
+6. A data dictionary file is included to describe the dataset columns:
+   data_dictionary.xlsx
+
