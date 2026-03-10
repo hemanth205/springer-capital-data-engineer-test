@@ -45,3 +45,27 @@ The script generates:
 
 Hemanth Naidu  
 Data Engineer Intern Assessment
+
+
+
+## Running with Docker
+
+Build the Docker image:
+
+docker build -t referral-project .
+
+Run the container:
+
+docker run referral-project
+
+The script will process the CSV file and generate the output reports.
+
+## Running without Docker
+
+Install dependencies:
+
+pip install pandas openpyxl
+
+Run the script:
+
+python your_script.py
